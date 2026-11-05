@@ -11,14 +11,7 @@ name: "Update Translated Docs"
 # 3. Update docs/scripts/translate_docs.py to have the new language
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-      - mkdocs.yml
-      - '!docs/ja/**'
-      - '!docs/ko/**'
+  workflow_dispatch:
 
 permissions:
   contents: write

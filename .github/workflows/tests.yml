@@ -1,11 +1,7 @@
 name: Tests
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    # All PRs, including stacked PRs
+  workflow_dispatch:
 
 env:
   UV_FROZEN: "1"

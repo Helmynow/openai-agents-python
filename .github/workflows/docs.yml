@@ -1,10 +1,7 @@
 name: Deploy docs
 
 on:
-  workflow_run:
-    workflows: ["Tests"]
-    types:
-      - completed
+  workflow_dispatch:
 
 permissions:
   contents: write # This allows pushing to gh-pages
